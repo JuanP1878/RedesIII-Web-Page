@@ -1,0 +1,37 @@
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body all-icons">
+          <div class="row">
+            <div
+              class="font-icon-list col-6 col-md-4" style="cursor: pointer;"
+              *ngFor="let device of devices"
+              (click)="sendRequest(device.nombre, device.status)"
+            >
+              <div class="font-icon-detail">
+                <p>
+                  <img
+                    id="imgDev"
+                    #img
+                    src="../../../assets/img/{{ device.nombre }}.png"
+                  />
+                </p>
+                <br />
+                <p id="{{ device.nombre }}">
+                  <a id="nombreOn" *ngIf="device.status == '0'">
+                    {{ device.nombre }}
+                  </a>
+
+                  <a id="nombreOff" *ngIf="device.status == '1'">
+                    {{ device.nombre }}
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

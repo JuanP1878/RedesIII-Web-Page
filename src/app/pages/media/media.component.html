@@ -1,0 +1,99 @@
+
+
+<div class=" content">
+
+  <div class="row">
+
+    <div class=" col-lg-6">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <h4 class=" card-category">Promoción del día en Amazon</h4>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-cart text-danger-states"></i><a href="{{dealLink}}"
+              style="color: WHITE">{{dealTitle}}</a>
+          </h3>
+        </div>
+        <div class=" card-body">
+          <div class="row" style="text-align: center;">
+            <div class=" col-lg-6">
+              <img src="{{dealImg}}" alt="Description">
+            </div>
+            <div class=" col-lg-6">
+              <ul>
+                <li>Fecha: {{dealDate}}</li>
+                <li>Título: {{dealTitle}}</li>
+                <li>Precio: {{dealPrice}}</li>
+                <li>Enlace: <a href="{{dealLink}}">Ir a la página</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" col-lg-6">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <h4 class=" card-category">Recomendación del día en Spotify</h4>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-satisfied text-info"></i> {{nameTracks[randomNumber]}}
+          </h3>
+        </div>
+        <div class=" card-body" style="text-align: center">
+          <iframe [src]="url" width="500" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class=" content">
+  <div class="row">
+    <div class=" col-lg-12">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <h4 class=" card-category">Promoción del Día en Amazon</h4>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-cart text-danger-states"></i><a href="{{dealLink}}"
+              style="color: WHITE">{{dealTitle}}</a>
+          </h3>
+        </div>
+        <div class=" card-body">
+          <div class="row" style="text-align: center;">
+            <div class=" col-lg-6">
+              <img src="{{dealImg}}" alt="Description">
+            </div>
+            <div class=" col-lg-6">
+              <ul>
+                <li>Fecha: {{dealDate}}</li>
+                <li>Título: {{dealTitle}}</li>
+                <li>Precio: {{dealPrice}}</li>
+                <li>Enlace: <a href="{{dealLink}}">Ir a la página</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=" col-lg-12">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <h4 class=" card-category">Canción del dia Spotify</h4>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-satisfied text-danger-states"> </i>
+          </h3>
+        </div>
+        <div class=" card-body">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ -->

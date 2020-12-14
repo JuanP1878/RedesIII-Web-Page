@@ -1,0 +1,36 @@
+
+<div class=" content">
+
+  <div class="row">
+
+    <div class=" col-lg-6">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <h4 class=" card-category">Temperatura Ambiente</h4>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-send text-success"></i>{{temp}} ºC
+          </h3>
+        </div>
+        <div class=" card-body">
+          <canvas id="realtimeTEM"> </canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class=" col-lg-6">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <h4 class=" card-category">Porcentaje de humedad</h4>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-delivery-fast text-info"> </i> {{hum}} %
+          </h3>
+        </div>
+        <div class=" card-body">
+          <canvas id="realtimeHUM"> </canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
