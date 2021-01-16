@@ -19,7 +19,7 @@ export class WebServiceService {
 
   getQueryNode(query: string) {
     const headers:HttpHeaders = new HttpHeaders();
-    const url = `http://192.168.15.100:3000/${query}`;
+    const url = `http://192.168.15.99:3000/${query}`;
     return this.http.get(url, {headers});
   }
 
